@@ -1,0 +1,338 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+.loader{
+    position: fixed;
+    background-color:  white;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index:  77;
+}
+
+.scroll-header{
+    position: fixed;
+    top: 0;
+    left:0;
+    background-color: white;
+    /* height: 15vh; */
+}
+
+/* .scroll-header-static{
+    position: static;
+}
+ */
+
+.hamb1-menu-wrapper{
+    display: none;
+}
+
+.site-start{
+    width: 100vw;
+    height: 100vh;
+    /* background: url("../images/image4-min.jpeg"); */
+    background: url("../images/Optimized-poz1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-site-start{
+    width: 100%;
+    height: 13%;
+    display:flex;
+}
+
+.hamb-menu-wrapper{
+    width: 20%;
+    height: 100%;
+    display: none;
+}
+
+
+.menu-wrapper{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+        .menu-header{
+            widtH: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .menu-header a{
+            padding: 5px;
+            font-size: 1.55rem;
+            text-decoration: none;
+            color: #4A2D03;
+            font-weight:700;
+            margin-left: 14px;
+            transition: 1s ease-in;
+            -webkit-transition: 0.5s ease-in;
+            -moz-transition: 0.5s ease-in;
+            -ms-transition: 0.5s ease-in;
+            -o-transition: 0.5s ease-in;
+}
+
+        .menu-header a:hover{
+            font-size: 1.55rem;
+            text-decoration: underline;
+            transform: scale(1.05);
+            -webkit-transform: scale(1.05);
+            -moz-transform: scale(1.05);
+            -ms-transform: scale(1.05);
+            -o-transform: scale(1.05);
+}
+
+.logo-wrapper{
+    widtH: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-header{
+    margin-top: 30px;
+    width: 250px;
+    height: 200px;
+     background: url("../images/without-bg-logo-bigger.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 20px;
+    margin-right: 100px;
+    
+}
+
+.start-site-content-wrapper{
+    color: rgb(252, 252, 252);
+    width: 100%;
+    height: 87%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-start-content{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.start-site-content-wrapper h1{
+    font-size: 5rem;
+}
+
+.start-site-content-wrapper p{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+
+.btn{
+    width: 180px;
+    height: 60px;
+    border-radius: 5%;
+    margin-top: 20px;
+    background-color: #4A2D03;
+    border: 1px solid  #4A2D03;
+    outline: none;
+
+}
+
+.btn a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    background-color: #4A2D03;
+    border: 1px solid  #4A2D03;
+    color: white;
+}
+
+.social-icons-header{
+    width: 20%;
+    display:flex;
+}
+
+
+/*//////////////////////////////////////////////////////////////////////
+                         RESPONSIVE DESIGN 
+////////////////////////////////////////////////////////////////////// */
+
+@media only screen and (max-width: 1100px) {
+    .menu-header a{
+        font-size: 1.33rem;
+        margin: 0 7px;   
+    }
+  }
+
+  @media only screen and (max-width: 920px) {
+    .hamb1-menu-wrapper{
+        display: none;
+    }
+
+
+        .logo-header{
+            width: 200px;
+            height: 160px;
+            margin-right: 10px;
+        }
+    }
+
+  @media only screen and (max-width: 850px) {
+    body{
+        position: relative;
+    }
+
+        .hamb1-menu-wrapper{
+            display: none;
+            background-color: #26B864;
+            position: fixed;
+            top:0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 74;
+        }
+
+                .first-sec-hamb1{
+                    widtH: 100%;
+                    height: 25%;
+                    display:flex;
+                    justify-content: flex-end;
+                }
+
+                .close-button{
+                    margin: 25px;
+                    width: 70px;
+                    height: 70px;
+                }
+
+                .hamb1-menu-header{
+                    widtH: 100%;
+                    height: 75%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                
+                .hamb1-menu-header a{
+                    border: 1px solid white;
+                    width: 100%;
+                    height: 15%;
+                    text-decoration:none;
+                    margin: 1px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 1.5rem;
+                    color: white;
+                    font-style: italic;
+                }
+
+        .hamb-menu-wrapper{
+            width: 40%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;      
+        }
+
+        .hambMenu
+        {
+            position: fixed;
+            left: 50px;
+            top: 24px;
+        }
+
+        .menu-wrapper{
+            display: none;      
+        }
+
+        .logo-wrapper{
+            widtH: 60%;
+        }
+    
+  }
+
+  @media only screen and (max-width: 689px) {
+    .header-site-start{
+        background-color: white;
+    }
+
+    .start-site-content-wrapper h1{
+        font-size: 4rem;
+    
+    }
+
+    .start-site-content-wrapper p{
+        font-size: 1.36rem;
+        font-weight: 600;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    
+    .start-site-content-wrapper h1{
+        font-size: 3.3rem;
+    }
+
+    .hambMenu
+    {
+        top: 29px;
+        left: 30px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .close-button{
+        margin: 25px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .site-start-content{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+  }
+
+  @media only screen and (max-width: 290px) {
+
+    .hambMenu
+    {
+        top: 26px;
+        left: 20px;
+        width: 35px;
+        height: 35px;
+    }
+  }
+
+  @media only screen and (max-width: 237px) {
+
+    .hambMenu
+    {
+        top: 28px;
+        left: 20px;
+        width: 32px;
+        height: 32px;
+    }
+  }

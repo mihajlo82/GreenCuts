@@ -1,0 +1,159 @@
+.footer{
+    width: 100vw;
+    height: 7vh;
+    display: flex;
+    background-color: #26B864;
+    color: white;
+}
+
+.footer-spaces{
+    width: 30%;
+}
+
+.footer-right{
+ width: 40%;
+ display: flex;
+ justify-content:  center;
+ align-items: center;
+}
+
+.footer-social{
+    width: 30%;
+    display:flex;
+    justify-content:center;
+}
+
+.soc-icon-logo{
+    width: 30px;
+    height: 30px;
+    margin: 2px;
+}
+.phone-foot{
+    display: flex;
+}
+
+.num-phone{
+    padding-top: 10px;
+    padding-left: 3px;
+}
+
+/*///////////////////////////////////
+         RESPONSIVE FOOTER 
+////////////////////////////////////*/
+
+@media only screen and (max-width: 846px) {
+    .footer-spaces
+    {
+        display: none;
+    }
+
+    .footer-right{
+        width: 55%;
+    }
+
+    .footer-social{
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .footer{
+        font-size: 0.88rem;
+    }
+}
+
+@media only screen and (max-width:530px) {
+    .footer-right{
+        width: 60%;
+    }
+
+    .footer-social{
+        width: 40%;
+    }
+
+    .soc-icon-logo{
+        width: 27px;
+        height: 27px;
+        margin: 2px;
+    }
+
+    .copir{
+        display: none
+    }
+}
+
+@media only screen and (max-width:470px) {
+    .footer{
+        font-size: 0.7rem;
+    }
+    .num-phone{
+        padding-top: 7px;
+        padding-left: 0px;
+        font-size: 0.86rem;
+    }
+}
+
+@media only screen and (max-width:390px) {
+    .footer{
+        font-size: 0.6rem;
+    }
+    .soc-icon-logo{
+        width: 24px;
+        height: 24px;
+        margin: 1px;
+    }
+
+    .num-phone{
+        padding-top: 7px;
+        padding-left: 0px;
+        font-size: 0.86rem;
+    }
+}
+
+@media only screen and (max-width:345px) {
+    .num-phone{
+        font-size: 0.76rem;
+    }
+    .footer-right{
+        display: none;
+    }
+
+    .footer-social{
+        width: 100%;
+        align-items: center;
+    }
+
+    .soc-icon-logo{
+        width: 28px;
+        height: 28px;
+    }
+
+    .num-phone{
+        padding-top: 7px;
+        padding-left: 0px;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width:180px) {
+    .num-phone{
+        font-size: 0.76rem;
+    }
+    .footer-right{
+        display: none;
+    }
+
+    .footer-social{
+        width: 100%;
+        align-items: center;
+    }
+
+    .soc-icon-logo{
+        width: 23px;
+        height: 23px;
+    }
+
+    .num-phone{
+        font-size: 0.9rem;
+    }
+}
